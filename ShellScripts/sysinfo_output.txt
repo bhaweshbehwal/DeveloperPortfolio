@@ -1,0 +1,14 @@
+===== Bhawesh kumar | Roll No: 2601730309 | Mon Nov 23 21:40:25 IST 2026 =====
+
+CPU Model : AMD Ryzen 7 170 with Radeon Graphics
+CPU Cores : 16
+
+Total Memory: 7.4Gi   Used Memory: 411Mi
+
+Top 3 Processes by CPU:
+USER %CPU% COMMAND
+root 0.0% /sbin/init
+root 0.0% /init
+root 0.0% init-watcher
+
+Report generated successfully.
