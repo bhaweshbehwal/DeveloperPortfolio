@@ -1,0 +1,63 @@
+=== ls -la ~ ===
+total 112
+drwxr-x--- 8 bhawesh bhawesh  4096 Nov 23 21:22 .
+drwxr-xr-x 3 root    root     4096 Oct 30 09:56 ..
+-rw------- 1 bhawesh bhawesh 23560 Nov  4 22:03 .bash_history
+-rw-r--r-- 1 bhawesh bhawesh   220 Oct 30 09:56 .bash_logout
+-rw-r--r-- 1 bhawesh bhawesh  3771 Oct 30 09:56 .bashrc
+drwx------ 2 bhawesh bhawesh  4096 Oct 30 09:58 .cache
+-rw-r--r-- 1 bhawesh bhawesh    91 Nov 23 21:19 .gitconfig
+-rw------- 1 bhawesh bhawesh    20 Nov  4 21:43 .lesshst
+drwx------ 3 bhawesh bhawesh  4096 Oct 30 10:22 .local
+-rw-r--r-- 1 bhawesh bhawesh     0 Nov 23 21:16 .motd_shown
+-rw-r--r-- 1 bhawesh bhawesh   807 Oct 30 09:56 .profile
+-rw-r--r-- 1 bhawesh bhawesh     0 Oct 30 10:00 .sudo_as_admin_successful
+drwxr-xr-x 8 bhawesh bhawesh  4096 Nov 23 21:24 DeveloperPortfolio
+drwxr-xr-x 3 bhawesh bhawesh  4096 Oct 30 10:38 Downloads
+-rw-r--r-- 1 bhawesh bhawesh   213 Oct 30 11:44 buggy_script.sh
+-rwxr--r-- 1 bhawesh bhawesh    91 Nov  2 10:30 count.sh
+drwxr-xr-x 2 bhawesh bhawesh  4096 Oct 30 10:38 cse103_backups
+drwxr-xr-x 4 bhawesh bhawesh  4096 Nov  4 10:28 cse103_lab
+-rwxr--r-- 1 bhawesh bhawesh    53 Nov  2 10:20 display.sh
+-rw-r--r-- 1 bhawesh bhawesh   187 Nov  2 10:14 marks.sh
+-rwxr--r-- 1 bhawesh bhawesh   139 Nov  2 10:25 mul.sh
+-rw-r--r-- 1 bhawesh bhawesh   129 Nov  2 10:05 number.sh
+-rwxr-xr-x 1 bhawesh bhawesh   112 Nov  2 10:11 result.sh
+-rwxr--r-- 1 bhawesh bhawesh   291 Nov  2 09:58 script.sh
+-rw-r--r-- 1 bhawesh bhawesh   221 Nov  2 10:36 sysr.sh
+
+=== ps aux | head -10 ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 165972 11632 ?        Ss   21:16   0:00 /sbin/init
+root           2  0.0  0.0   3820  2524 hvc0     Sl+  21:16   0:00 /init
+root           3  0.0  0.0   3680  2220 hvc0     S+   21:16   0:00 init-watcher
+root           8  0.0  0.0   3836  2436 hvc0     Sl+  21:16   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          62  0.0  0.1  47756 15312 ?        S<s  21:16   0:00 /lib/systemd/systemd-journald
+root          87  0.0  0.0  22644  6036 ?        Ss   21:16   0:00 /lib/systemd/systemd-udevd
+systemd+     106  0.0  0.1  25568 13860 ?        Ss   21:16   0:00 /lib/systemd/systemd-resolved
+systemd+     107  0.0  0.0  89380  7532 ?        Ssl  21:16   0:00 /lib/systemd/systemd-timesyncd
+root         185  0.0  0.0   4316  2820 ?        Ss   21:16   0:00 /usr/sbin/cron -f -P
+
+=== df -h ===
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.7G     0  3.7G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            3.7G  4.0K  3.7G   1% /mnt/wsl
+drivers         197G  117G   81G  60% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.0G  954G   1% /
+none            3.7G   36K  3.7G   1% /mnt/wslg
+none            3.7G     0  3.7G   0% /usr/lib/wsl/lib
+rootfs          3.7G  3.4M  3.7G   1% /init
+none            3.7G  556K  3.7G   1% /run
+none            3.7G     0  3.7G   0% /run/lock
+none            3.7G     0  3.7G   0% /run/shm
+none            3.7G  104K  3.7G   1% /mnt/wslg/versions.txt
+none            3.7G  104K  3.7G   1% /mnt/wslg/doc
+C:\             197G  117G   81G  60% /mnt/c
+D:\             279G  3.8G  275G   2% /mnt/d
+tmpfs           754M  8.0K  754M   1% /run/user/1000
+
+=== free -h ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.4Gi       409Mi       6.8Gi       4.0Mi       184Mi       6.8Gi
+Swap:          2.0Gi          0B       2.0Gi
